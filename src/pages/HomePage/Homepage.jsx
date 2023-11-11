@@ -19,7 +19,11 @@ import carousel11 from "../../images/carousel11.jpg";
 import carousel12 from "../../images/carousel12.jpg";
 import carousel13 from "../../images/carousel13.jpg";
 import carousel14 from "../../images/carousel14.jpg";
-
+import members from "../../images/members.jpeg";
+import benefits from "../../images/benefits.jpeg";
+import OnlineServices from "../../images/OnlineServices.jpeg";
+import Ourpartners from "../../images/OurPartners.jpeg";
+import { Link } from "react-router-dom";
 export const HomePage = () => {
     const sliderSettings = {
         dots: true,
@@ -34,8 +38,12 @@ export const HomePage = () => {
 
   return (
     <>
+    <Stack sx={{backgroundColor: "lightgreen"}}>
+
+   
+
+    <Container sx={{backgroundColor: "white"}}>
     <Navbar />
-    <Container>
     <Slider {...sliderSettings}>
   <img src={carousel1} alt=""/>
   <img src={carousel2} alt=""/>
@@ -55,24 +63,62 @@ export const HomePage = () => {
 
         </Slider>
 
-<Stack className="home-container" flexDirection={"row"}>
+<Stack className="home-container" flexDirection={"row"}sx={{px: 5, py: 3, }} >
     <div className="container1">
-        <h1>Article 1</h1>
+        <img src={members} alt=" "></img>
+        <h1>Members</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem aliquam reiciendis explicabo odit itaque illo animi rem velit eius quia officia enim aspernatur eos cumque totam, ducimus tenetur temporibus.
+            </p> <img src={OnlineServices} alt=" "></img>
+        <h1>Online Services</h1>
+        <p>
+
+      
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus doloribus saepe cumque velit, odio repudiandae nostrum ratione, nam sit rerum asperiores alias repellat ullam sed dolorem itaque rem facere suscipit!
+        </p>
     </div>
     <div className="container2">
-        <h1>Article 2</h1>
+    <img src={benefits} alt=" "></img>
+        <h1>Benefits</h1>
+        <p>
+        
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus doloribus saepe cumque velit, odio repudiandae nostrum ratione, nam sit rerum asperiores alias repellat ullam sed dolorem itaque rem facere suscipit!
+        </p>
+        <img src={Ourpartners} alt=" "></img>
+        <h1>Our Partners</h1>
+        <p>
+        
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus doloribus saepe cumque velit, odio repudiandae nostrum ratione, nam sit rerum asperiores alias repellat ullam sed dolorem itaque rem facere suscipit!
+        </p>
     </div>
     <div className="container3">
-        <h1>Article 3</h1>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus doloribus saepe cumque velit, odio repudiandae nostrum ratione, nam sit rerum asperiores alias repellat ullam sed dolorem itaque rem facere suscipit!
+        <p>
+        <Link href="#">Circulars</Link> * 
+    <Link href="#">Advisories</Link>
+        </p>
+<p>
+
+
+    <Link href="#">News</Link> * 
+    <Link href="#">Office Statements</Link>
+    </p>
+    <p>
+
+    <Link href="#">ITB</Link> * 
+    <Link href="#">Job Vacancies</Link>
+    </p>
+    <Link href="#">Joint Issuances</Link>
+    <img src={carousel1} alt="" width={215} height={86}></img>
+    <img src={carousel2} alt="" width={215} height={86}></img>
+    <img src={carousel3} alt="" width={215} height={86}></img>
+    <img src={carousel4} alt="" width={215} height={86}></img>
+
     </div>
 </Stack>
 
 
 </Container>
 <Footer />
+</Stack>
     </>
   );
 };
