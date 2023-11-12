@@ -6,6 +6,10 @@ import { Footer } from './pages/Utilities/footer';
 import { NotFound } from './pages/Utilities/notfound';
 import { HomePage } from './pages/HomePage/Homepage';
 import LoginPage from './pages/HomePage/LoginPage';
+import DoctorCreate from './pages/DoctorsView/DoctorCreate';
+import DoctorList from './pages/DoctorsView/DoctorsLists';
+import DoctorsDetails from './pages/DoctorsView/DentistDetails';
+import DoctorEdit from './pages/DoctorsView/DoctorEdit';
 
 
 function App() {
@@ -18,6 +22,11 @@ function App() {
        <Route path="*" element={< NotFound/>}></Route>
        <Route path="/" element={< HomePage/>}></Route>
        <Route path="/Login" element={< LoginPage/>}></Route>
+
+       <Route path="/Doctors-registration-form" element={< DoctorCreate/>}></Route>
+       <Route path="/Doctors" element={< DoctorList/>}></Route>
+       <Route path="/Doctors/:id" element={< DoctorsDetails/>}></Route>
+       <Route path="/Doctors/edit/:id" element={< DoctorEdit/>}></Route>
        </Routes>
        </BrowserRouter>
 </>

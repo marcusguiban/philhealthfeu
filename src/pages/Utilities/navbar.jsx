@@ -34,6 +34,17 @@ export const Navbar = () => {
 
             </ButtonGroup>
           </Box>
+          <Box display="flex" justifyContent="center" >
+            <ButtonGroup variant="contained" color="success" disableRipple justifyContent={"center"}>
+              <Button href="/Doctors-registration-form">Doctor Registration Form</Button>
+              <Button href="/Doctors">Doctors</Button>
+              <Button href="#">Our Partners</Button>
+              <Button href="#">Online Services</Button>
+              <Button href="#">Downloads</Button>
+
+
+            </ButtonGroup>
+          </Box>
         </Stack>
       </Container>
     </Stack>
