@@ -14,9 +14,9 @@ export const Navbar = () => {
           <Stack flexDirection={"row"} spacing={4} sx={{px: 2 ,py: 2}} justifyContent={"center"} alignItems={"center"}>
               <img src={philhealthlogo} alt="philhealthlogo" width={295} height={108}></img>
               <Stack  sx={{px: 2 ,py: 2}}>
-                <Button href="#" color="success" variant="contained" disableRipple>Login</Button>
+                <Button href="/Login" color="success" variant="contained" disableRipple>Login</Button>
                 <ButtonGroup variant="text" color="success" disableRipple>
-                  <Button href="#">Home</Button>
+                  <Button href="/">Home</Button>
                   <Button href="#">Contact  Us</Button>
                   <Button href="#">sitemap</Button>
                   <Button href="#">disclamer</Button>

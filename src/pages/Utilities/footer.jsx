@@ -11,8 +11,8 @@ export const Footer = () => {
     <Stack bgcolor={"green"}>
 
    
-    <Container className="footer">
-        <Typography variant="subtitle1" color={"white"} justifyContent={"center"}>
+    <Container className="footer" justifyContent={"center"}>
+        <Typography variant="subtitle1" color={"white"} >
         © 2023 cloned by Marcus Gabrielle G. Guiban | FEU ALABANG
         </Typography>
     

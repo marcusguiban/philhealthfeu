@@ -5,6 +5,7 @@ import { Navbar } from './pages/Utilities/navbar';
 import { Footer } from './pages/Utilities/footer';
 import { NotFound } from './pages/Utilities/notfound';
 import { HomePage } from './pages/HomePage/Homepage';
+import LoginPage from './pages/HomePage/LoginPage';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
        <Route path="/footer" element={< Footer/>}></Route>
        <Route path="*" element={< NotFound/>}></Route>
        <Route path="/" element={< HomePage/>}></Route>
+       <Route path="/Login" element={< LoginPage/>}></Route>
        </Routes>
        </BrowserRouter>
 </>

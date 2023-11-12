@@ -63,8 +63,8 @@ export const HomePage = () => {
 
         </Slider>
 
-<Stack className="home-container" flexDirection={"row"}sx={{px: 5, py: 3, }} >
-    <div className="container1">
+<Stack className="home-container" flexDirection={"row"}sx={{px: 5, py: 3, justifyContent: 'space-evenly' }} >
+    <Stack className="container1" sx={{px: 5, py: 3}}>
         <img src={members} alt=" "></img>
         <h1>Members</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dolorem aliquam reiciendis explicabo odit itaque illo animi rem velit eius quia officia enim aspernatur eos cumque totam, ducimus tenetur temporibus.
@@ -75,8 +75,8 @@ export const HomePage = () => {
       
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus doloribus saepe cumque velit, odio repudiandae nostrum ratione, nam sit rerum asperiores alias repellat ullam sed dolorem itaque rem facere suscipit!
         </p>
-    </div>
-    <div className="container2">
+    </Stack>
+    <Stack className="container2" sx={{px: 5, py: 3}}>
     <img src={benefits} alt=" "></img>
         <h1>Benefits</h1>
         <p>
@@ -89,8 +89,8 @@ export const HomePage = () => {
         
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus doloribus saepe cumque velit, odio repudiandae nostrum ratione, nam sit rerum asperiores alias repellat ullam sed dolorem itaque rem facere suscipit!
         </p>
-    </div>
-    <div className="container3">
+    </Stack>
+    <Stack className="container1" sx={{px: 5, py: 3}}>
         <p>
         <Link href="#">Circulars</Link> * 
     <Link href="#">Advisories</Link>
@@ -107,12 +107,12 @@ export const HomePage = () => {
     <Link href="#">Job Vacancies</Link>
     </p>
     <Link href="#">Joint Issuances</Link>
-    <img src={carousel1} alt="" width={215} height={86}></img>
-    <img src={carousel2} alt="" width={215} height={86}></img>
-    <img src={carousel3} alt="" width={215} height={86}></img>
-    <img src={carousel4} alt="" width={215} height={86}></img>
+    <img src={carousel1} alt="" width={255} height={86}></img>
+    <img src={carousel2} alt="" width={255} height={86}></img>
+    <img src={carousel3} alt="" width={255} height={86}></img>
+    <img src={carousel4} alt="" width={255} height={86}></img>
 
-    </div>
+    </Stack>
 </Stack>
 
 
