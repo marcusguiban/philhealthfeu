@@ -157,7 +157,7 @@ const DoctorsDetails = () => {
           <Link to="/Doctors">
           <Button variant="contained" color="success" sx={{ color: "White" }} >Dentist List</Button>
           </Link>
-          <Link to={`/Doctors/edit/${doctors.DoctorID}`}>
+          <Link to={`/Doctors/edit/${doctors._id}`}>
           <Button variant="contained" color="success" sx={{ color: "White" }} >Edit</Button>
           </Link>
           <Button variant="contained" color="success" sx={{ color: "White" }} onClick={handleDelete}>Delete</Button>

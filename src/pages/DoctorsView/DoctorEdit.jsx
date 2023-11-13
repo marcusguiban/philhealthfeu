@@ -40,7 +40,7 @@ password: " "
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let url = `http://127.0.0.1:5000/api/doctors/${id}`;
+    let url = `http://127.0.0.1:5000/api/doctors/`;
 
     const requestOptions = {
       method: "PUT",
@@ -52,6 +52,7 @@ password: " "
         UserName: doctors.UserName,
         Password: doctors.Password,
         email: doctors.email,
+        lastname: doctors.lastname,
         firstName: doctors.firstName,
         middleName: doctors.middleName,
         prefix: doctors.prefix,

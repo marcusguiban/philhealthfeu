@@ -76,7 +76,7 @@ const DoctorList = () => {
               <TableCell >{e.Specialization}</TableCell>
               <TableCell >{e.Address}</TableCell>
               <TableCell >
-                <Link to={`/Doctors/${e.DoctorID}`} style={{ color: 'green'}}><VisibilityIcon /></Link>
+                <Link to={`/Doctors/${e._id}`} style={{ color: 'green'}}><VisibilityIcon /></Link>
                 </TableCell>
             </TableRow>
           ))}
