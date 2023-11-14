@@ -30,6 +30,7 @@ const DoctorList = () => {
     fetch(url, requestOptions)
       .then((response) => response.json())
       .then((json) => {
+        
         setdoctors(json);
         setLoading(false);
       });
@@ -64,19 +65,19 @@ const DoctorList = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {doctors.map((e) => (
+          {doctors.map((doctor) => (
             <TableRow
-              key={e.id}
+            key={doctor.id} 
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell >{e.DoctorID}</TableCell>
-              <TableCell >{e.lastname}, {e.firstName} {e.middleName}. </TableCell>
-              <TableCell >{e.email}</TableCell>
-              <TableCell >{e.contactNumber}</TableCell>
-              <TableCell >{e.Specialization}</TableCell>
-              <TableCell >{e.Address}</TableCell>
+              <TableCell >{doctor.DoctorID}</TableCell>
+              <TableCell >{doctor.lastname}, {doctor.firstName} {doctor.middleName}. </TableCell>
+              <TableCell >{doctor.email}</TableCell>
+              <TableCell >{doctor.contactNumber}</TableCell>
+              <TableCell >{doctor.Specialization}</TableCell>
+              <TableCell >{doctor.Address}</TableCell>
               <TableCell >
-                <Link to={`/Doctors/${e._id}`} style={{ color: 'green'}}><VisibilityIcon /></Link>
+                <Link to={`/Doctors/${doctor._id}`} style={{ color: 'green'}}><VisibilityIcon /></Link>
                 </TableCell>
             </TableRow>
           ))}
