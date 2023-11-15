@@ -38,7 +38,7 @@ export const Navbar = () => {
             <ButtonGroup variant="contained" color="success" disableRipple justifyContent={"center"}>
               <Button href="/Doctors-registration-form">Doctor Registration Form</Button>
               <Button href="/Doctors">Doctors</Button>
-              <Button href="#">Our Partners</Button>
+              <Button href="/Patients">Patients</Button>
               <Button href="#">Online Services</Button>
               <Button href="#">Downloads</Button>
 

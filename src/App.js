@@ -8,8 +8,12 @@ import { HomePage } from './pages/HomePage/Homepage';
 import LoginPage from './pages/HomePage/LoginPage';
 import DoctorCreate from './pages/DoctorsView/DoctorCreate';
 import DoctorList from './pages/DoctorsView/DoctorsLists';
-import DoctorsDetails from './pages/DoctorsView/DentistDetails';
+import DoctorsDetails from './pages/DoctorsView/DoctorDetails';
 import DoctorEdit from './pages/DoctorsView/DoctorEdit';
+import PatientList from './pages/PatientView/PatientList';
+import PatientsDetails from './pages/PatientView/PatientDetails';
+import PatientCreate from './pages/PatientView/PatientCreate';
+import PatientEdit from './pages/PatientView/PatientEdit';
 
 
 function App() {
@@ -27,6 +31,11 @@ function App() {
        <Route path="/Doctors" element={< DoctorList/>}></Route>
        <Route path="/Doctors/:id" element={< DoctorsDetails/>}></Route>
        <Route path="/Doctors/edit/:id" element={< DoctorEdit/>}></Route>
+
+       <Route path="/Patients" element={< PatientList/>}></Route>
+       <Route path="/Patients/:id" element={< PatientsDetails/>}></Route>
+       <Route path="/Patients-registration-form" element={< PatientCreate/>}></Route>
+       <Route path="/Patients/edit/:id" element={< PatientEdit/>}></Route>
        </Routes>
        </BrowserRouter>
 </>
