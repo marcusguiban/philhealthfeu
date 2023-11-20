@@ -97,7 +97,7 @@ const AdminList = () => {
       </Table>
     </TableContainer>
     <Stack direction={"row"} spacing={4} justifyContent={"center"} sx={{mx:5, my:5}}>
-      <Link to="/Patients-registration-form">
+      <Link to="/Admin-registration-form">
     <Button  variant="outlined" color="success">Register new Admin</Button>
 
       </Link>

@@ -16,6 +16,7 @@ import PatientCreate from './pages/PatientView/PatientCreate';
 import PatientEdit from './pages/PatientView/PatientEdit';
 import AdminList from './pages/AdminView/AdminList';
 import Overview from './pages/Utilities/overview';
+import AdminCreate from './pages/AdminView/AdminCreate';
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
        <Route path="/Patients/edit/:id" element={< PatientEdit/>}></Route>
 
        <Route path="/Admin" element={< AdminList/>}></Route>
-       <Route path="/Admin" element={< AdminList/>}></Route>
+       <Route path="/Admin-registration-form" element={< AdminCreate/>}></Route>
        </Routes>
 </BrowserRouter>
 </>
