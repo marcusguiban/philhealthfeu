@@ -91,56 +91,56 @@ const AdminDetails = () => {
         <Typography variant="h6" >Name: </Typography>
         </Stack>
         <Stack px={10}  >
-        <Typography variant="h6" >{admin.lastname}, {adminfirstName} {admin.middleName}. </Typography>
+        <Typography variant="h6" >{admin.lastname}, {admin.firstName} {admin.middleName}. </Typography>
         </Stack>
       </Stack>
 
       <Stack direction={"row"} >
         <Stack px={10} style={{width: 155}} >
-        <Typography variant="h6" >Email: </Typography>
+        <Typography variant="h6" >Business Email: </Typography>
         </Stack>
         <Stack px={10} >
-        <Typography variant="h6" >{admin.email}</Typography>
+        <Typography variant="h6" >{admin.Businessemail}</Typography>
         </Stack>
       </Stack>
       <Stack direction={"row"} >
         <Stack px={10} style={{width: 155}} >
-        <Typography variant="h6" >Gender: </Typography>
-        </Stack>
-        <Stack px={10} >
-        <Typography variant="h6" >{admin.gender}</Typography>
-        </Stack>
-      </Stack>
-      <Stack direction={"row"} >
-        <Stack px={10} style={{width: 155}} >
-        <Typography variant="h6" >Birthday: </Typography>
-        </Stack>
-        <Stack px={10} >
-        <Typography variant="h6" >{admin.birthday}</Typography>
-        </Stack>
-      </Stack>
-      <Stack direction={"row"} >
-        <Stack px={10} style={{width: 155}}>
         <Typography variant="h6" >Contact Number: </Typography>
         </Stack>
         <Stack px={10} >
-        <Typography variant="h6" >{admin.contactNumber}</Typography>
+        <Typography variant="h6" >{admin.ContactNumber}</Typography>
+        </Stack>
+      </Stack>
+      <Stack direction={"row"} >
+        <Stack px={10} style={{width: 155}} >
+        <Typography variant="h6" >Occuption: </Typography>
+        </Stack>
+        <Stack px={10} >
+        <Typography variant="h6" >{admin.Occuption}</Typography>
         </Stack>
       </Stack>
       <Stack direction={"row"} >
         <Stack px={10} style={{width: 155}}>
-        <Typography variant="h6" >License Number: </Typography>
+        <Typography variant="h6" >Sector: </Typography>
         </Stack>
         <Stack px={10} >
-        <Typography variant="h6" >{admin.LicenseNumber}</Typography>
+        <Typography variant="h6" >{admin.Sector}</Typography>
         </Stack>
       </Stack>
       <Stack direction={"row"} >
         <Stack px={10} style={{width: 155}}>
-        <Typography variant="h6" >Specialization: </Typography>
+        <Typography variant="h6" >Office Address: </Typography>
         </Stack>
         <Stack px={10} >
-        <Typography variant="h6" >{admin.Specialization}</Typography>
+        <Typography variant="h6" >{admin.Officeaddress}</Typography>
+        </Stack>
+      </Stack>
+      <Stack direction={"row"} >
+        <Stack px={10} style={{width: 155}}>
+        <Typography variant="h6" >Barangay: </Typography>
+        </Stack>
+        <Stack px={10} >
+        <Typography variant="h6" >{admin.Barangay}</Typography>
         </Stack>
       </Stack>
       <Stack direction={"row"} >
@@ -148,7 +148,31 @@ const AdminDetails = () => {
         <Typography variant="h6" >Address: </Typography>
         </Stack>
         <Stack px={10} >
-        <Typography variant="h6" >{admin.Address}</Typography>
+        <Typography variant="h6" >{admin.City}</Typography>
+        </Stack>
+      </Stack>
+      <Stack direction={"row"} >
+        <Stack px={10} style={{width: 155}}>
+        <Typography variant="h6" >Province: </Typography>
+        </Stack>
+        <Stack px={10} >
+        <Typography variant="h6" >{admin.Province}</Typography>
+        </Stack>
+      </Stack>
+      <Stack direction={"row"} >
+        <Stack px={10} style={{width: 155}}>
+        <Typography variant="h6" >Region: </Typography>
+        </Stack>
+        <Stack px={10} >
+        <Typography variant="h6" >{admin.Region}</Typography>
+        </Stack>
+      </Stack>
+      <Stack direction={"row"} >
+        <Stack px={10} style={{width: 155}}>
+        <Typography variant="h6" >Postal Code: </Typography>
+        </Stack>
+        <Stack px={10} >
+        <Typography variant="h6" >{admin.Postalcode}</Typography>
         </Stack>
       </Stack>
     </Stack>
