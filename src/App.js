@@ -19,6 +19,10 @@ import Overview from './pages/Utilities/overview';
 import AdminCreate from './pages/AdminView/AdminCreate';
 import AdminDetails from './pages/AdminView/AdminDetials';
 import AdminEdit from './pages/AdminView/AdminEdit';
+import TransactionCreate from './pages/Transactions/transactionCreate';
+import TransactionList from './pages/Transactions/transactionList';
+import TransactionDetails from './pages/Transactions/transactionDetails';
+import TransactionEdit from './pages/Transactions/transactionEdit';
 
 
 function App() {
@@ -47,6 +51,12 @@ function App() {
        <Route path="/Admin-registration-form" element={< AdminCreate/>}></Route>
        <Route path="/Admin/:id" element={< AdminDetails/>}></Route>
        <Route path="/Admin/edit/:id" element={< AdminEdit/>}></Route>
+
+       <Route path="/Transaction-Form" element={< TransactionCreate/>}></Route>
+       <Route path="/Transaction" element={< TransactionList/>}></Route>
+       <Route path="/Transaction/:id" element={< TransactionDetails/>}></Route>
+       <Route path="/Transaction/edit/:id" element={< TransactionEdit/>}></Route>
+
        </Routes>
 </BrowserRouter>
 </>

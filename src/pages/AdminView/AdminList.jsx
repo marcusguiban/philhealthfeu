@@ -62,11 +62,6 @@ const AdminList = () => {
             <TableCell >Occuption</TableCell>
             <TableCell >Sector</TableCell>
             <TableCell >Officeaddress</TableCell>
-            <TableCell >Barangay</TableCell>
-            <TableCell >City</TableCell>
-            <TableCell >Province</TableCell>
-            <TableCell >Region</TableCell>
-            <TableCell >Postalcode</TableCell>
             <TableCell >View</TableCell>
           </TableRow>
         </TableHead>
@@ -82,12 +77,8 @@ const AdminList = () => {
               <TableCell >{admin.ContactNumber}</TableCell>
               <TableCell >{admin.Occuption}</TableCell>
               <TableCell >{admin.Sector}</TableCell>
-              <TableCell >{admin.Officeaddress}</TableCell>
-              <TableCell >{admin.Barangay}</TableCell>
-              <TableCell >{admin.City}</TableCell>
-              <TableCell >{admin.Province}</TableCell>
-              <TableCell >{admin.Region}</TableCell>
-              <TableCell >{admin.Postalcode}</TableCell>
+              <TableCell >{admin.Officeaddress}, {admin.Barangay}, {admin.City}, {admin.Province}, {admin.Region}, {admin.Postalcode}</TableCell>
+
               <TableCell >
                 <Link to={`/admin/${admin._id}`} style={{ color: 'green'}}><VisibilityIcon /></Link>
                 </TableCell>
