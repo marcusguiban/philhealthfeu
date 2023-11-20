@@ -23,6 +23,10 @@ import TransactionCreate from './pages/Transactions/transactionCreate';
 import TransactionList from './pages/Transactions/transactionList';
 import TransactionDetails from './pages/Transactions/transactionDetails';
 import TransactionEdit from './pages/Transactions/transactionEdit';
+import AppointmentList from './pages/Appointments.jsx/AppointmentList';
+import AppointmentCreate from './pages/Appointments.jsx/AppointmentCreate';
+import AppointmentDetails from './pages/Appointments.jsx/AppointmentDetails';
+import AppointmentEdit from './pages/Appointments.jsx/AppointmentEdit';
 
 
 function App() {
@@ -57,6 +61,11 @@ function App() {
        <Route path="/Transaction/:id" element={< TransactionDetails/>}></Route>
        <Route path="/Transaction/edit/:id" element={< TransactionEdit/>}></Route>
 
+
+       <Route path="/Appointment-Form" element={< AppointmentCreate/>}></Route>
+       <Route path="/Appointment" element={< AppointmentList/>}></Route>
+       <Route path="/Appointment/:id" element={< AppointmentDetails/>}></Route>
+       <Route path="/Appointment/edit/:id" element={< AppointmentEdit/>}></Route>
        </Routes>
 </BrowserRouter>
 </>

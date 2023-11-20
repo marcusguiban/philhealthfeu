@@ -4,6 +4,7 @@ import PatientList from "../PatientView/PatientList";
 import AdminList from "../AdminView/AdminList";
 import { Box, Button, ButtonGroup } from "@mui/material";
 import TransactionList from "../Transactions/transactionList";
+import AppointmentList from "../Appointments.jsx/AppointmentList";
 
 
 
@@ -24,6 +25,7 @@ const Overview = () => {
               <Button href="/Patients-registration-form">Patients Registration Form</Button>
               <Button href="/Admin-registration-form">Admin Registration Form</Button>
               <Button href="/Transaction-form">Transaction Form</Button>
+              <Button href="/Appointment-form">Transaction Form</Button>
 
 
             </ButtonGroup>
@@ -32,6 +34,7 @@ const Overview = () => {
 <PatientList />
 <AdminList />
 <TransactionList />
+<AppointmentList />
     </>
   );
 };

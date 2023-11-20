@@ -1,4 +1,5 @@
 
+import { Button, Typography } from '@mui/material';
 import { Container } from '@mui/system';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -21,11 +22,11 @@ const LoginPage = () => {
   return (
     <div>
       {loggedIn ? (
-        <div>
-          <h2>Welcome, {username}!</h2>
-          <Link to="/overview"> Overview
-          </Link>
-        </div>
+        <Container  spacing={4} justifyContent={"center"} sx={{ px:10, py:10}}>
+          <Typography variant='h5' >Welcome, {username}!</Typography>
+          <Link to="/overview"><Button type="submit" value="Update" variant="outlined" size="large"> Overview
+           </Button></Link> </Container>
+          
       ) : (
         <Container>
           <h2>Login Page</h2>
