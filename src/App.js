@@ -14,6 +14,7 @@ import PatientList from './pages/PatientView/PatientList';
 import PatientsDetails from './pages/PatientView/PatientDetails';
 import PatientCreate from './pages/PatientView/PatientCreate';
 import PatientEdit from './pages/PatientView/PatientEdit';
+import AdminList from './pages/AdminView/AdminList';
 
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
        <Route path="/Patients/:id" element={< PatientsDetails/>}></Route>
        <Route path="/Patients-registration-form" element={< PatientCreate/>}></Route>
        <Route path="/Patients/edit/:id" element={< PatientEdit/>}></Route>
+
+       <Route path="/Admin" element={< AdminList/>}></Route>
        </Routes>
        </BrowserRouter>
 </>

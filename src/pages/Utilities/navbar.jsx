@@ -39,7 +39,7 @@ export const Navbar = () => {
               <Button href="/Doctors-registration-form">Doctor Registration Form</Button>
               <Button href="/Doctors">Doctors</Button>
               <Button href="/Patients">Patients</Button>
-              <Button href="#">Online Services</Button>
+              <Button href="/Admin">Admin</Button>
               <Button href="#">Downloads</Button>
 
 
