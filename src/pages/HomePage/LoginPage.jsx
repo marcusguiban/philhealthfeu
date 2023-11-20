@@ -1,6 +1,7 @@
 
 import { Container } from '@mui/system';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   const [username, setUsername] = useState('');
@@ -22,7 +23,8 @@ const LoginPage = () => {
       {loggedIn ? (
         <div>
           <h2>Welcome, {username}!</h2>
-          {/* Additional content for a logged-in user */}
+          <Link to="/overview"> Overview
+          </Link>
         </div>
       ) : (
         <Container>

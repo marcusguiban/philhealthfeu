@@ -70,7 +70,7 @@ const PatientList = () => {
             key={patient.id} 
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell >{patient.PatientID}</TableCell>
+              <TableCell >key={patient.PatientID}</TableCell>
               <TableCell >{patient.lastname}, {patient.firstName} {patient.middleName}. </TableCell>
               <TableCell >{patient.email}</TableCell>
               <TableCell >{patient.contactNumber}</TableCell>

@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { Typography, Box, Button, Stack, Container, TextField } from "@mui/material"
 
 const AdminCreate = () => {
-  const [admin, setPatient] = useState({
+  const [admin, setAdmin] = useState({
   });
 
   const navigate = useNavigate();
 
   const handleChanged = (e) => {
-    setPatient((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    setAdmin((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = (e) => {
@@ -102,4 +102,4 @@ const AdminCreate = () => {
   );
 };
 
-export default PatientCreate;
+export default AdminCreate;

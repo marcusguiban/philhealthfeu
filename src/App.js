@@ -15,6 +15,7 @@ import PatientsDetails from './pages/PatientView/PatientDetails';
 import PatientCreate from './pages/PatientView/PatientCreate';
 import PatientEdit from './pages/PatientView/PatientEdit';
 import AdminList from './pages/AdminView/AdminList';
+import Overview from './pages/Utilities/overview';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
        <Route path="*" element={< NotFound/>}></Route>
        <Route path="/" element={< HomePage/>}></Route>
        <Route path="/Login" element={< LoginPage/>}></Route>
+       <Route path="/Overview" element={< Overview/>}></Route>
 
        <Route path="/Doctors-registration-form" element={< DoctorCreate/>}></Route>
        <Route path="/Doctors" element={< DoctorList/>}></Route>
@@ -39,8 +41,9 @@ function App() {
        <Route path="/Patients/edit/:id" element={< PatientEdit/>}></Route>
 
        <Route path="/Admin" element={< AdminList/>}></Route>
+       <Route path="/Admin" element={< AdminList/>}></Route>
        </Routes>
-       </BrowserRouter>
+</BrowserRouter>
 </>
   );
 }
